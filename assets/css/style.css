@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #040a0b;    
+    --secondary-color: #48A6A7;  
+    --background-color: #EAE2C6;
+    --text-color: #2c3e50;      
+    --font-size: 16px;          
+    --button-color: #0c0c0b;    
+}
+body {
+    font-family: Didot, serif;
+    height: 100vh;
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background: rgba(246, 243, 238, 0.426);
+    border-radius: .5rem;
+    border-style: ridge;
+    border-color: rgba(132, 132, 132, 0.861);
+    height: 80px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px;
+    margin-top: .2rem;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; 
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start; 
+    align-items: center;
+    width: auto; 
+}
+
+nav ul li {
+    margin-right: 20px; 
+}
+
+nav ul li a {
+    color: rgb(10, 9, 9);
+    font-size: 18px; 
+    font-weight: bold;
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none; 
+    padding: 10px 15px; 
+    border-radius: 10px;
+    transition: background 0.5s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(245, 250, 248, 0.949);
+    border-radius: 2rem;
+}
+.descriptions{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: 25rem;
+    padding: 20px;
+    width: 55%;
+    color: rgb(68, 3, 3);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Didot, serif;
+    border-radius: 10%;
+}
+
+.search-container {
+    display: flex;
+    border-radius: 10%;
+    align-items: center;
+    margin-left: auto; 
+    justify-content: flex-start; 
+    background-color: rgba(89, 87, 87, 0.252);
+    padding: 225px 50px;
+    margin-left: 27rem;
+    margin-top: 5rem;
+    width: 50%;
+    
+}
+
+.search-input {
+    margin-top: -15rem;
+    font-size: 18px;
+    width: 280rem;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 25px;
+    border: 2px solid var(--primary-color);
+    margin-right: 10px;
+
+}
+
+.search-button {
+    background-color: var(--button-color);
+    color: white;
+    margin-top: -15rem;
+    padding: 20px 30px;
+    display: flex;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.search-button i {
+    font-size: 20px;
+}
+
+.search-input:focus, .search-button:focus {
+    outline: none;
+}
+
+.output {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 30rem;
+    margin-top: -25rem;
+    margin-left: 42rem;
+    white-space: nowrap;
+}
+
+#search-output {
+    font-size: 35px;
+    flex-wrap: wrap;
+    font-weight: bold;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #BFBBA9;;
+    color: rgb(5, 4, 4);
+}
+
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: rgb(2, 1, 1);
+    text-decoration: none;
+}
+title{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    border-radius: 10%;
+    position: relative;
+    margin-left: 25rem;
+    padding: 20px;
+    margin-top: 2rem;
+    background-color: #BFBBA9;
+    width: 55%;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    font-family: Didot, serif;
+}
+
+    footer {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 40px;
+    letter-spacing: 1px;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: #BFBBA9;
+    color: rgb(12, 11, 11);
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 1000; 
+}
+
+
+@keyframes slide-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+footer p {
+    animation: slide-right 10s linear infinite;
+}

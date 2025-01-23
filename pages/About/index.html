@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>  
+        <div>
+            <div class="nav title">ADVANCED WEB DESIGN</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">HOME</a></li>
+                <li class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search..." class="search-input">
+                    <button type="button" class="search-button" onclick="displaySearchTerm()">Submit</button>
+                </li>
+                <li><a href="../About/index.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="title">
+        <h1>THE 4 FUNDAMENTALS</h1>
+    </div>
+    <section class="funda1">
+        <p class="title1">VARIABLE DECLARATION</p>
+        <p class="descri1"> A variable is how you store information in a program so that you can use it later. In this code, searchTerm is a variable that begins empty and then gets updated with the user's input from the search bar. Variables help you keep data organized and allow you to make your code reusable and dynamic. The let keyword declares searchTerm, which means it can be reassigned as needed. Think of a variable as a storage box where you can keep any value.
+        </p>
+        </section>
+        <section class="funda2">
+            <p class="title2">INPUT & OUTPUT</p>
+            <p class="descri2"> A function is a reusable block of code that performs a specific task. The displaySearchTerm function takes the value from the search bar and displays it in the output section. It also checks the input and shows appropriate messages if the input is empty or invalid. Functions help make your code modular and easy to manage. In this case, the function ensures the user sees feedback based on their input.
+            <p class="des2">How to Use: Type a word in the search bar and click the "Submit" button to trigger the function.
+                Expected Output: If you type " Silas," you’ll see  " Suggestions: Silas Rhys Coroza.</p>
+            </p>
+            </section>
+            <section class="funda3">
+                <p class="title3">CONDITIONAL STATEMENTS</p>
+                <p class="descri3"> Conditional statements are those that enable the program to decide based on a certain condition. In this code, if the search bar is empty, it asks the user to "Please enter a search term." If the term is less than three characters long, it displays "Search term is too short. Try again." If not, then it confirms the search with a message like "You searched for: [searchTerm]." It ensures that the program reacts accordingly to various conditions.
+                <p class="des3">How to Use: Test the search bar with an empty input, a short input (like "Hi"), or a valid input (like "HTML").
+                    
+                    Expected Output:
+                    
+                    Input "Hi": "Search term is too short. Try again."
+                    Input "Rhys": "You searched for: Silas Rhys Coroza"</p>
+                </p>
+                </section>
+                <section class="funda4">
+                    <p class="title4">LOOPING STATEMENTS</p>
+                    <p class="descri4"> Loops are used for repetition, for instance, going through a list of suggestions and filtering them. It checks if there are any words in the list of suggestions matching what the user searches for. All matching words will be added to a new list and displayed. If no match is found, it shows "No suggestions found." Loops can make repetitive work easier without requiring additional code to be written.
+                    <p class="des4">How to Use: Enter a search term like "Java" or "Python" and see the suggestions displayed below the search result.
+                        Expected Output:
+                        
+                        Input "Java": "You searched for: JavaScript <br> Suggestions: JavaScript"
+                        Input "Python": "You searched for: Python <br> Suggestions: Python"
+                        Input "C++": "You searched for: C++ <br> No suggestions found."</p>
+                    </p>
+                    </section>
+    <div class="output">
+        <p id="search-output"></p>
+    </div>
+      
+    <footer>
+        <p>&copy; 2025 SRCoroza. All rights reserved.</p>
+    </footer>
+
+    <script src="../About/assets/js/scripts.js"></script>
+
+</body>
+</html>
